@@ -1,0 +1,296 @@
+:root {
+    --firstColor: #292E36;
+    --secondColor: #E1B168;
+    --thirdcolor: #FFF8F5;
+}
+
+@font-face {
+    font-family: josef;
+    src: url(../Fonts/Josefin/JosefinSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    max-width: 1320px;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--firstColor);
+}
+
+header a {
+    font-family: josef, sans-serif;
+    margin: 15px;
+}
+
+.headerTopContent {
+    border-bottom: 1px solid #5c6168;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.logo {
+    height: 80%;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.phone,
+.reservation {
+    display: inline-block;
+    padding: 15px 0;
+    border: 1px solid var(--secondColor);
+    font-size: 18px;
+    width: 190px;
+    text-align: center;
+    transition: 0.9s;
+}
+
+.phone {
+    border: 1px solid var(--secondColor);
+    color: #fff;
+}
+
+.phone:hover {
+    background-color: var(--secondColor);
+    color: var(--firstColor);
+}
+
+.reservation {
+    background-color: var(--secondColor);
+    color: #292E36;
+}
+
+.reservation:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+nav a {
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+.navigation .navbar a {
+    margin-right: 20px;
+}
+
+.navigation .navbar a:hover {
+    color: var(--secondColor);
+}
+
+.active {
+    color: var(--secondColor);
+}
+
+.socialicon i {
+    color: #fff;
+    padding: 5px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.maincontent {
+    height: 810px;
+    background-color: var(--firstColor);
+    display: flex;
+    border-bottom: 1px solid #5c6168;
+}
+
+.part1 h1 {
+    color: #fff;
+    font-size: 100px;
+    font-family: Cormorant Infant;
+}
+
+@font-face {
+    font-family: Cormorant Infant;
+    src: url(/Fonts/Cormorant/CormorantInfant-SemiBold.ttf);
+}
+
+.maincontent a {
+    display: inline-block;
+    border: solid var(--secondColor);
+    color: var(--secondColor);
+    font-family: josef;
+    width: 170px;
+    height: 50px;
+    margin-top: 25px;
+    transition: 0.9s;
+}
+
+.maincontent a:hover {
+    background-color: var(--secondColor);
+    color: #fff;
+}
+
+.part1 p {
+    color: #fff;
+    font-size: 20px;
+    font-family: josef;
+    flex-wrap: wrap;
+    display: flex;
+    width: 600px;
+}
+
+.part1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2 {
+    border: 30px solid #5c6168d7;
+    border-bottom: none;
+    position: relative;
+}
+
+.spiral {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--thirdcolor);
+    margin: 20px;
+}
+
+.mainContainer{
+    background-color: var(--thirdcolor);
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.location i{    
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: #292E36;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationTxt{
+    display: flex;
+    flex-direction: column;
+}
+.clock{
+    display:flex;
+}
+.clip{
+    display: flex;
+}
+.clockTxt{
+    display: flex;
+    flex-direction: column;
+}
+.clock i{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: #292E36;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clipTxt{
+    display: flex;
+    flex-direction: column;
+}
+.clip i{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: #292E36;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+}
+.section2img{
+    width: 50%;
+}
+.section2img img{
+    width: 100%;
+}
+.section2Txt{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.section2h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.section2h1 h1 {
+    font-size: 30px;
+    font-family: Cormorant Infant;
+}
+@font-face {
+    font-family: Cormorant Infant;
+    src: url(/Fonts/Cormorant/CormorantInfant-SemiBold.ttf);
+}
+.section2h1 p{
+    font-family: josefin;
+    width: 400px;
+    text-align: justify;
+} 
+@font-face {
+    font-family: josef;
+    src: url(../Fonts/Josefin/JosefinSans-VariableFont_wght.ttf);
+}
+.section2p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
